@@ -7,7 +7,7 @@ var users = [];
 server.listen(process.env.PORT || 3000);
 
 app.get('/', function (req, res, next) {
-	res.sendFile(__dirname + '\\index.html');
+	res.sendFile(__dirname + '/index.html');
 });
 
 io.sockets.on('connection', function(socket) {
