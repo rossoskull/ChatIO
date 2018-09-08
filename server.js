@@ -1,15 +1,19 @@
+// Importing modules
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var users = [];
 
+// Start server, and listen to Env port, or 3000
 server.listen(process.env.PORT || 3000);
 
+// Serve index.html on '/' route
 app.get('/', function (req, res, next) {
 	res.sendFile(__dirname + '/index.html');
 });
 
+// Real time Magic!
 io.sockets.on('connection', function(socket) {
 
 	// New User
