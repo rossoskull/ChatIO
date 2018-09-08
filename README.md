@@ -5,3 +5,15 @@
 ChatIO is a simple realtime chat application, written in JavaScript.
 
 I created this app to learn the basics of Socket.IO
+
+#### To install - 
+```
+$ npm install
+```
+
+### To run - 
+```
+$ npm start
+```
+
+You can view it on `localhost/3000` after running it on local server
