@@ -1,7 +1,15 @@
 body {
-    background-color: #021;
+    background-color: #fff;
     padding-bottom: 15px;
     color: lightgrey;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: greyscale;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
 }
+
+h2 { 
+    color: #398564;
+}
+

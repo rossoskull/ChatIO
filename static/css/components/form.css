@@ -1,19 +1,18 @@
 
 input[type="text"] {
-    padding: 5px 10px;
-    border-radius: 3px;
-    border: 2px solid grey;
-    font-size: 16px;
+    padding: .75em 1.25em;
+    border-radius: .33em;
+    border: .125em solid #eaeaea;
+    font-size: 1em;
     font-family: "Arial"
 }
 
 input[type="submit"] {
     display: inline-block;
-    padding: 5px 15px;
-    border-radius: 3px;
-    border: 2px solid green;
-    font-size: 16px;
-    background-color: green;
+    padding: .75em 1.25em;
+    border-radius: .33em;
+    font-size: 1em;
+    background-color: #49ab81;
     color: white;
     font-family: "Source Code Pro Semibold";
     font-weight: bold;
@@ -27,40 +26,39 @@ input[type="submit"]:hover {
 
 
 
-.maincont {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 .unamecont {
-    border: 2px solid lightgrey;
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
+    box-shadow: .125em .15em 1.5em rgba(0,0,0,0.15);
+    padding: 5em 1.25em 2.5em;
     text-align: center;
+    max-width: 60em;
+    background-color: #efefef;
+    margin: 3em auto 0 ;
+    height: 15em;
 }
 
 .bodycont {
     display: none;
+    max-width: 60em;
+    margin: 0 auto;
 }
 
 .chatwrap {
     float: left;
     width: 49%;
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding: 10px 10px;
+    border-radius: .6em;
+    margin-bottom: .6em;
+    padding: 1em;
     box-sizing: border-box;
     text-align: center;
+    background-color: #eaeaea;
 }
 
 .chatcont {
-    height: 400px;
+    height: 25em;
     background-color: white;
-    border-radius: 8px;
-    border:1px solid grey;
-    margin-bottom: 10px;
-    padding: 10px 10px;
+    border-radius: .5em;
+    margin-bottom: .6em;
+    padding: 1em;
     color: black;
     text-align: left;
 }
@@ -69,9 +67,10 @@ input[type="submit"]:hover {
     float: right;
     width: 50%;
     border: 1px solid grey;
-    border-radius: 10px;
-    padding: 20px 20px;
+    border-radius: .6em;
+    padding: 1.25em;
     font-weight: bold;
     line-height: 1.5;
     box-sizing: border-box; 
+    color: #3a3a3a;
 }
