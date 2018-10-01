@@ -1,0 +1,77 @@
+
+input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 2px solid grey;
+    font-size: 16px;
+    font-family: "Arial"
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: 2px solid green;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    font-family: "Source Code Pro Semibold";
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+
+
+.maincont {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.unamecont {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.bodycont {
+    display: none;
+}
+
+.chatwrap {
+    float: left;
+    width: 49%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.chatcont {
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    border:1px solid grey;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    color: black;
+    text-align: left;
+}
+
+.nameswrap {
+    float: right;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    box-sizing: border-box; 
+}

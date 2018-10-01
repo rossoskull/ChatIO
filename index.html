@@ -1,109 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>
-			ChatIO App
-		</title>
-		<style type="text/css">
-			body {
-				background-color: #021;
-				padding-bottom: 15px;
-				color: lightgrey;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: greyscale;
-			}
-
-			input[type="text"] {
-				padding: 5px 10px;
-				border-radius: 3px;
-				border: 2px solid grey;
-				font-size: 16px;
-				font-family: "Arial"
-			}
-
-			input[type="submit"] {
-				display: inline-block;
-				padding: 5px 15px;
-				border-radius: 3px;
-				border: 2px solid green;
-				font-size: 16px;
-				background-color: green;
-				color: white;
-				font-family: "Source Code Pro Semibold";
-				font-weight: bold;
-				transition: 0.1s;
-			}
-
-			input[type="submit"]:hover {
-				cursor: pointer;
-				background-color: darkgreen;
-			}
-
-			.maincont {
-				max-width: 700px;
-				margin: 0 auto;
-			}
-
-			.unamecont {
-				border: 2px solid lightgrey;
-				border-radius: 10px;
-				padding: 10px 10px 20px 10px;
-				text-align: center;
-			}
-
-			.bodycont {
-				display: none;
-			}
-
-			.chatwrap {
-				float: left;
-				width: 49%;
-				border: 1px solid grey;
-				border-radius: 10px;
-				margin-bottom: 10px;
-				padding: 10px 10px;
-				box-sizing: border-box;
-				text-align: center;
-			}
-
-			.chatcont {
-				height: 400px;
-				background-color: white;
-				border-radius: 8px;
-				border:1px solid grey;
-				margin-bottom: 10px;
-				padding: 10px 10px;
-				color: black;
-				text-align: left;
-			}
-
-			.nameswrap {
-				float: right;
-				width: 50%;
-				border: 1px solid grey;
-				border-radius: 10px;
-				padding: 20px 20px;
-				font-weight: bold;
-				line-height: 1.5;
-				box-sizing: border-box; 
-			}
-		</style> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link type="text/css" rel="stylesheet" href="/css/style.css">
+		<title>ChatIO App</title>
 	</head>
 	<body>
-		<div class="maincont">
-			<h1>ChatIO Chat App</h1>
+		<main class="maincont">
+			<header>
+				<h1>ChatIO Chat App</h1>
+			</header>
 
 			<!-- User registration -->
-			<div class="unamecont">
+			<section class="unamecont">
 				<h2>Enter a username and start chatting!</h2>
 				<form id='userform'>
 					<input id="uname" name="uname" placeholder="Username" type="text">&nbsp;
 					<input id="sub" name="sub" value="Chat &raquo;" type="submit"></input>
 				</form>
-			</div>
+			</section>
 
 			<!-- Chat UI -->
-			<div class="bodycont">
+			<section class="bodycont">
 				<h2>Enjoy!</h2>
 				<div class="chatwrap">
 					<div class="chatcont">  </div>
@@ -113,16 +33,16 @@
 					</form>
 				</div>
 				<div class="nameswrap"></div>
-			</div>
+			</section>
 
 
-		</div>
+		</main>
 
 		<!-- Script -->
 		<script
-			  src="https://code.jquery.com/jquery-3.3.1.js"
-			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			  crossorigin="anonymous"></script>
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"></script>
 		<script src="/socket.io/socket.io.js"></script>	
 		<script type="text/javascript">
 			$(function(){
