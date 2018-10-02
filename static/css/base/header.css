@@ -1,0 +1,12 @@
+header {
+    background-color: #317256;
+    width: 100%;
+    height: 75px;
+    line-height: 1;
+}
+
+header h1 {
+    color: #fff;
+    float: left;
+    margin-left: 75px;
+}

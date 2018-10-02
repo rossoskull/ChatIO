@@ -8,11 +8,12 @@ var users = [];
 // Start server, and listen to Env port, or 3000
 server.listen(process.env.PORT || 3000);
 
+app.use(express.static('static'));
+
 // Serve index.html on '/' route
 app.get('/', function (req, res, next) {
 	res.sendFile(__dirname + '/index.html');
 });
-
 // Real time Magic!
 io.sockets.on('connection', function(socket) {
 
