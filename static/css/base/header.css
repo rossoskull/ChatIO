@@ -8,5 +8,16 @@ header {
 header h1 {
     color: #fff;
     float: left;
-    margin-left: 75px;
+    margin-left: 30px;
+}
+.chaticon{
+    height: 50px;
+    width:50px;
+    background-image: url("./../../icons/communication-by-phone-chat.svg");
+    background-size: cover;
+}
+.right{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
 }
