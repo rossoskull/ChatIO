@@ -14,6 +14,7 @@
   "author": "Jay Mistry",
   "license": "ISC",
   "dependencies": {
+    "ac-css-reset": "^1.1.1",
     "express": "^4.16.3",
     "socket.io": "^2.1.1"
   },
