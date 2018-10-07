@@ -1,4 +1,136 @@
-@import 'base/header.css';
-@import 'base/page.css';
+/*****************************************************************************/
+/* General */
+/*****************************************************************************/
+body {
+    padding: 0 0 15px 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #d3d3d3;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
 
-@import 'components/form.css';
+h2 {
+    color: #398564;
+}
+
+/*****************************************************************************/
+/* header */
+/*****************************************************************************/
+header {
+    width: 100%;
+    height: 75px;
+    line-height: 1;
+    background-color: #317256;
+}
+
+header h1 {
+    float: left;
+    margin-left: 30px;
+    color: #fff;
+}
+.chaticon{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url("./../../icons/communication-by-phone-chat.svg");
+}
+.right{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/*****************************************************************************/
+/* input */
+/*****************************************************************************/
+input[type="text"] {
+    padding: .75em 1.25em;
+    border-radius: .33em;
+    border: .125em solid #eaeaea;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: .75em 1.25em;
+    border-radius: .33em;
+    color: #fff;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: #49ab81;
+    transition: 0.1s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #09630b;
+}
+
+/*****************************************************************************/
+/* .unamecont */
+/*****************************************************************************/
+.unamecont {
+    max-width: 60em;
+    height: 15em;
+    padding: 5em 1.25em 2.5em;
+    margin: 3em auto 0 ;
+    background-color: #efefef;
+    box-shadow: .125em .15em 1.5em rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/*****************************************************************************/
+/* .bodycont */
+/*****************************************************************************/
+.bodycont {
+    display: none;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+/*****************************************************************************/
+/* .chatwrap */
+/*****************************************************************************/
+.chatwrap {
+    box-sizing: border-box;
+    float: left;
+    width: 49%;
+    padding: 1em;
+    border-radius: .6em;
+    margin-bottom: .6em;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+/*****************************************************************************/
+/* .chatcont */
+/*****************************************************************************/
+.chatcont {
+    height: 25em;
+    padding: 1em;
+    border-radius: .5em;
+    margin-bottom: .6em;
+    text-align: left;
+    color: #000;
+    background-color: #fff;
+}
+
+/*****************************************************************************/
+/* .nameswrap */
+/*****************************************************************************/
+.nameswrap {
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+    padding: 1.25em;
+    border: 1px solid #aaaaaa;
+    border-radius: .6em;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #3a3a3a;
+}
