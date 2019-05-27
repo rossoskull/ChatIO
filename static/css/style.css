@@ -1,4 +1,157 @@
-@import 'base/header.css';
-@import 'base/page.css';
+/*****************************************************************************/
+/* General */
+/*****************************************************************************/
+body {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
 
-@import 'components/form.css';
+/*****************************************************************************/
+/* header */
+/*****************************************************************************/
+header {
+    position: relative;
+    padding: 2.4em;
+    margin-bottom: 3.2em;
+    background-color: #317256;
+}
+
+header h1 {
+    font-size: 2em;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+.chaticon{
+    position: absolute;
+    top: 8px;
+    right: 24px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url("./../../icons/communication-by-phone-chat.svg");
+}
+
+/*****************************************************************************/
+/* input */
+/*****************************************************************************/
+input[type="text"] {
+    padding: 0.8em;
+    border-radius: 2px;
+    border: 1px solid #09630b;
+    font-size: 1.4em;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 0.8em;
+    border: 1px solid #09630b;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.4em;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: #317256;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #09630b;
+}
+
+/*****************************************************************************/
+/* .unamecont */
+/*****************************************************************************/
+.unamecont {
+    max-width: 600px;
+    padding: 2.4em;
+    border: 1px solid #317256;
+    border-radius: 2px;
+    margin: 2.4em auto;
+}
+
+.unamecont h2 {
+    margin-bottom: 0.8em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.unamecont input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.4em;
+}
+
+.unamecont input[type="submit"] {
+    display: block;
+    width: 100%;
+}
+
+/*****************************************************************************/
+/* .bodycont */
+/*****************************************************************************/
+.bodycont {
+    display: none;
+    margin: 2.4em 3.2em;
+    min-width: 640px;
+}
+.bodycont h2 {
+    margin-bottom: 0.8em;
+    font-size: 2em;
+    text-align: center;
+}
+
+/*****************************************************************************/
+/* .chatwrap */
+/*****************************************************************************/
+.chatwrap {
+    float: left;
+    width: calc(100% - 300px);
+    padding: 2.4em;
+    border-radius: 2px;
+    border: 1px solid #317256;
+}
+
+/*****************************************************************************/
+/* .chatcont */
+/*****************************************************************************/
+.chatcont {
+    height: 500px;
+    padding: 1.8em;
+    border-radius: 2px;
+    border: 1px solid #317256;
+    margin-bottom: 1.6em;
+    overflow: scroll;
+    font-size: 1.8em;
+    line-height: 2em;
+    background-color: #fff;
+}
+
+/*****************************************************************************/
+/* .nameswrap */
+/*****************************************************************************/
+.nameswrap {
+    float: right;
+    width: 280px;
+    padding: 1.8em;
+    border-radius: 2px;
+    border: 1px solid #317256;
+    font-size: 1.6em;
+}
+
+/*****************************************************************************/
+/* #messageform */
+/*****************************************************************************/
+#messageform input[type="text"] {
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+
+#messageform input[type="submit"] {
+    float: right;
+    display: inline-block;
+    width: 90px;
+}
